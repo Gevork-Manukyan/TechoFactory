@@ -1,0 +1,11 @@
+.ImageBluePrint {
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: var(--borderRadius);
+    background-color: rgb(217, 217, 217, 0.5);
+}
+
