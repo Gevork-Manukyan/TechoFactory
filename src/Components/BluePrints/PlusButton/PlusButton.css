@@ -1,0 +1,26 @@
+.PlusButton {
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: var(--borderRadius);
+    background-color: var(--bluePrintComponentBG);
+
+    box-shadow: -10px 11px 9px -7px rgba(0,0,0,0.4);
+    user-select: none;
+
+    transition-property: all;
+    transition-duration: 0.05s;
+    transition-timing-function: linear;
+}
+
+.PlusButton:hover {
+    cursor: pointer;
+}
+
+.PlusButton:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
