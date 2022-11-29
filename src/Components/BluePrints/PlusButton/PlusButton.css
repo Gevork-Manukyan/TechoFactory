@@ -1,5 +1,6 @@
 .PlusButton {
     height: 65px;
+    margin: 40px 0px 15px;
 
     display: flex;
     justify-content: center;
