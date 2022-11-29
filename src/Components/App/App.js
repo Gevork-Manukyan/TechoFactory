@@ -1,5 +1,5 @@
-import BluePrint from '../BluePrint/BluePrint';
 import './App.css';
+import BluePrint from "../BluePrints/BluePrint/BluePrint"
 
 function App() {
   return (

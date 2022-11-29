@@ -1,5 +1,5 @@
 import "./ImageBluePrint.css"
-import icon from "../../assets/blueprint/image-icon.png"
+import icon from "../../../assets/blueprint/image-icon.png"
 
 export default function ImageBluePrint() {
     return (

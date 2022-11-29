@@ -1,5 +1,5 @@
 import "./TextBluePrint.css"
-import icon from "../../assets/blueprint/text-icon.png"
+import icon from "../../../assets/blueprint/text-icon.png"
 
 export default function TextBluePrint() {
     return (
