@@ -3,13 +3,13 @@ import icon from "../../../assets/blueprint/plus-icon.png"
 
 export default function PlusButton({setBluePrintQueue, setSelectionVisible}) {
     
-    function onPlusClick() {
+    function onPlusClickHandler() {
         setSelectionVisible((prev) => !prev)
     }
 
     return(
-        <div className="PlusButton" onClick={onPlusClick}>
-            <img src={icon} />
+        <div className="PlusButton" onClick={onPlusClickHandler}>
+            <img src={icon} alt="Plus" />
         </div>
     )
 }

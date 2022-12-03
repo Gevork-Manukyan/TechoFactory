@@ -10,3 +10,7 @@
     border: solid black 1px;
     background-color: antiquewhite;
 }
+
+.BluePrintSelection.hidden {
+    display: none;
+}

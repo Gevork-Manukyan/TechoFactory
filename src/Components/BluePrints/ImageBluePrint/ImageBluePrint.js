@@ -4,7 +4,7 @@ import icon from "../../../assets/blueprint/image-icon.png"
 export default function ImageBluePrint() {
     return (
         <div className="ImageBluePrint">
-            <img src={icon} />
+            <img src={icon} alt="Icon" />
         </div>
     )
 }
