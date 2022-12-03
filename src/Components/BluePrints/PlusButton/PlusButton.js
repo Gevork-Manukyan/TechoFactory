@@ -1,10 +1,10 @@
 import "./PlusButton.css"
 import icon from "../../../assets/blueprint/plus-icon.png"
 
-export default function PlusButton({setBluePrintQueue}) {
+export default function PlusButton({setBluePrintQueue, setSelectionVisible}) {
     
     function onPlusClick() {
-        
+        setSelectionVisible((prev) => !prev)
     }
 
     return(

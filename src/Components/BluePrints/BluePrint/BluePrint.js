@@ -8,16 +8,16 @@ import "./BluePrint.css"
 export default function BluePrint() {
 
     const [bluePrintQueue, setBluePrintQueue] = useState([<ImageBluePrint />, <ImageBluePrint />,<ImageBluePrint />,<ImageBluePrint />,<ImageBluePrint />,<ImageBluePrint />,<ImageBluePrint />,])
-
+    const [selectionVisible, setSelectionVisible] = useState(false)
 
 
     return (
         <div className="BluePrint">
-            <BluePrintSelection />
+            <BluePrintSelection selectionVisible={selectionVisible} setSelectionVisible={setSelectionVisible} />
             <div className="bluePrintQueue">
                 {bluePrintQueue}
             </div>
-            <PlusButton setBluePrintQueue={setBluePrintQueue} />
+            <PlusButton setBluePrintQueue={setBluePrintQueue} setSelectionVisible={setSelectionVisible} />
         </div>
     )
 }
