@@ -12,14 +12,16 @@ export default function BluePrintSelection({selectionVisible, setSelectionVisibl
 
     }, [selectionVisible])
 
-    function onBlurHandler() {
-        setSelectionVisible((prev) => !prev)
+    function onBlurHandler(e) {
+        if ((document.activeElement.className).toString().trim() !== "BluePrintSelection")
+            setSelectionVisible((prev) => !prev)
     }
 
     
     return (
-        <div className={`BluePrintSelection ${selectionVisible ? "" : "hidden"}`} ref={componentRef} tabIndex={-1} onBlur={onBlurHandler}>
-
-        </div>
+        <>
+        <div id="BluePrintSelection_bg" className={`${selectionVisible ? "" : "hidden"}`}></div>
+        <div className={`BluePrintSelection ${selectionVisible ? "" : "hidden"}`} ref={componentRef} tabIndex={-1} onBlur={onBlurHandler}></div>
+        </>
     )
 }

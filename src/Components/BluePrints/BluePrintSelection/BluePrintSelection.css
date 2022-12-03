@@ -9,8 +9,23 @@
 
     border: solid black 1px;
     background-color: antiquewhite;
+
+    z-index: 11;
 }
 
-.BluePrintSelection.hidden {
+
+#BluePrintSelection_bg {
+    position: fixed;
+    width: 200vw;
+    height: 200vh;
+    background-color: #FFFFFF;
+    opacity: 70%;
+    
+    transform: translate(-50%, -50%);
+    
+    z-index: 10;
+}
+
+.hidden {
     display: none;
 }
