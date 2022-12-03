@@ -11,7 +11,7 @@ export default function BluePrint() {
 
 
     return (
-        <div className="BluePrint">
+        <div className={`BluePrint ${selectionVisible ? "selectionOpen" : ""}`}>
             <BluePrintSelection selectionVisible={selectionVisible} setSelectionVisible={setSelectionVisible} />
             <div className="bluePrintQueue">
                 {bluePrintQueue}

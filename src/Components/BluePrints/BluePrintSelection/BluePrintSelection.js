@@ -13,8 +13,10 @@ export default function BluePrintSelection({selectionVisible, setSelectionVisibl
     }, [selectionVisible])
 
     function onBlurHandler(e) {
-        if ((document.activeElement.className).toString().trim() !== "BluePrintSelection")
+        if ((document.activeElement.className).toString().trim() !== "BluePrintSelection"){
             setSelectionVisible((prev) => !prev)
+            document.body.style.overflow = "auto"
+        }
     }
 
     

@@ -5,6 +5,7 @@ export default function PlusButton({setBluePrintQueue, setSelectionVisible}) {
     
     function onPlusClickHandler() {
         setSelectionVisible((prev) => !prev)
+        document.body.style.overflow = "hidden"
     }
 
     return(
