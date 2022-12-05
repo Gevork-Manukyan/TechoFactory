@@ -3,12 +3,18 @@
     height: 75vh;
     position: fixed;
 
+    box-sizing: border-box;
+    padding: 50px;
+
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
     border: solid black 1px;
     background-color: antiquewhite;
+    border-radius: var(--borderRadius);
+
+    display: flex;
 
     z-index: 11;
 }
@@ -24,6 +30,30 @@
     transform: translate(-50%, -50%);
     
     z-index: 10;
+}
+
+.BluePrintSelection .BluePrintItem {
+    width: 250px;
+    height: 100px;
+
+    margin: 0px 20px;
+
+    opacity: 100%;
+    border: solid black 1px;
+
+    box-shadow: 8px 5px 9px -1px rgba(0,0,0,0.4);
+
+    user-select: none;
+    cursor: pointer;
+
+    transition-property: all;
+    transition-duration: 0.01s;
+    transition-timing-function: linear;
+}
+
+.BluePrintSelection .BluePrintItem:active {
+    transform: translateY(2px);
+    box-shadow: none;
 }
 
 .hidden {
